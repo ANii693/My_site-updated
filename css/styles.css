@@ -1,0 +1,179 @@
+/* 
+the code refactoring is not done because its already a mess just added navbar using bootstrap5.3  
+
+and made responsive by adding media query
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  background-color: #f8f4f4;
+}
+.container-fluid {
+  width: 50%;
+}
+
+h1 {
+  font-size: 4.6875rem;
+  margin-top: 0;
+  font-family: "Sacramento", cursive;
+  margin: 50px auto 0 auto;
+  color: #66bfbf;
+  line-height: 2;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-weight: normal; /*this normal fornt weight helped us to remove the bold default of h2 property*/
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-container {
+  background-color: #eaf6f6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.top-clould {
+  position: absolute;
+  right: 300px;
+  top: 80px;
+}
+.bottom-clould {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.profile {
+  margin: 80px auto;
+}
+.mypic {
+  width: 170px;
+  margin: 40px;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted;
+  border-width: 8px;
+  border-bottom: none;
+  width: 5%;
+  color: #d5f1f1;
+  margin: 100px auto;
+}
+
+.skill-row {
+  margin: 100px auto;
+  text-align: left;
+}
+
+.comppng {
+  width: 180px;
+  float: left;
+  margin: 0 5% 2% 0;
+}
+.chillipng {
+  width: 180px;
+  float: right;
+  margin: 0 0 2% 5%;
+}
+
+.contact-me {
+  margin: 0 auto;
+}
+
+.footer-link {
+  color: #108b8f;
+  margin: 0 50px 50px;
+  display: inline-block;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #eaf6f6;
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 70px 0 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.bottom-container.container-fluid {
+  width: 100%;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.85rem;
+}
+
+.lastmsg {
+  margin: 30px auto 50px;
+}
+.contact-btn {
+  margin: 0 0 10%;
+}
+
+.navbar {
+  padding-top: 70px;
+  background-color: #eaf6f6;
+  font-family: "Montserrat";
+  font-size: large;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #66bfbf !important;
+}
+
+@media (max-width: 1400px) {
+  .container-fluid {
+    width: 60%;
+  }
+  .top-clould {
+    right: 100px;
+  }
+  .bottom-clould {
+    left: 100px;
+    bottom: 220px;
+  }
+  .mountain {
+    height: 280px;
+  }
+}
+
+@media (max-width: 870px) {
+  .container-fluid {
+    width: 80%;
+  }
+  .top-clould {
+    right: 30px;
+  }
+  .bottom-clould {
+    left: 30px;
+    bottom: 200px;
+  }
+  .footer-link {
+    margin: 0 20px 20px;
+  }
+  .mountain {
+    height: 220px;
+    display: inline-block;
+    margin-top: 70px;
+  }
+}
